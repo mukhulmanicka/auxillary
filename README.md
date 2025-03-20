@@ -20,7 +20,10 @@ brew install cmake libpng
 
 ## **Instructions for formatting**
 
-
+The code will already be formatted when you download the repo but to reformat it just run:
+```bash
+clang-format --style=Google <filename>
+```
 
 ## **Instructions for building**  
 
@@ -36,7 +39,7 @@ make
 ## **Instructions for running**  
 **MAKE SURE YOU ARE IN THE BUILD DIRECTORY BEFORE RUNNING THESE COMMANDS!**
 
-Run the emulator with the menu to pick the game you want to play:
+Run this command to generate the random image:
 ```bash
-./Banana -m
+./RandomImage <filename> <width> <height>
 ```

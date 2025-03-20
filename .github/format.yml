@@ -14,4 +14,4 @@ jobs:
           sudo apt install -y clang-format
       - name: Verify Format
         run: |
-          clang-format -i --style=Google src/main.cpp src/random_image.cpp src/ random_image.h
+          clang-format -i --style=Google src/main.cpp src/random_image.cpp src/random_image.h
