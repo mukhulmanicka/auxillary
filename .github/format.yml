@@ -1,0 +1,17 @@
+name: Format
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Tools
+        run: |
+          sudo apt update
+          sudo apt install -y clang-format
+      - name: Verify Format
+        run: |
+          clang-format -i --style=Google src/main.cpp src/random_image.cpp src/ random_image.h
